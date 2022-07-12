@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "F:\\coder curso\\desarrollo web\\proyecto final\\html-css"
+	},
+	{
+		"path": "F:\\coder curso\\javascript"
+	},
+	{
+		"path": ".."
+	},
+	{
+		"path": "..\\..\\Coteus"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "portafolio1"
+  }
+}
