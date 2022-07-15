@@ -237,6 +237,7 @@ main {
 /* sobre mi */
 
 /* skilss */
+
 .container-skills {
   display: flex;
   flex-direction: column;
@@ -270,6 +271,41 @@ main {
   justify-content: space-around;
 }
 
+.fa-brands:hover {
+  -webkit-transition: all 400ms ease-in;
+  -webkit-transform: scale(2.8);
+  -ms-transition: all 300ms ease-in;
+  -ms-transform: scale(2.5);
+  -moz-transition: all 100ms ease-in;
+  -moz-transform: scale(2.5);
+  transition: all 320ms ease-in;
+  transform: scale(1.8);
+}
+
+.fa-html5:hover {
+  color: #ff5733;
+}
+
+.fa-css3-alt:hover {
+  color: #007bff;
+}
+
+.fa-js-square:hover {
+  color: #fcaa00;
+}
+
+.fa-sass:hover {
+  color: #cd6799;
+}
+
+.fa-bootstrap:hover {
+  color: #6a5acd;
+}
+
+.fa-git-alt:hover {
+  color: #f1502f;
+}
+
 /* skilss */
 
 /* PROYECTOS */
@@ -292,6 +328,7 @@ main {
 /* PROYECTOS */
 
 /* CARDS*/
+
 .container-card {
   padding: 20px;
   display: flex;
@@ -342,13 +379,15 @@ main {
 /* FORMULARIO */
 
 form {
-  width: 340px;
+  width: 348px;
   margin: 4em auto;
   padding: 3em 2em 2em 2em;
   /* background: #fafafa; */
-  border: 1px solid #ebebeb;
-  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px,
-    rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+  /* border: 1px solid #ebebeb;
+  box-shadow: rgba(0, 0, 0.5, 0.14902) 0px 1px 1px 0px,
+    rgba(0, 0, 0.8, 0.09804) 0px 1px 2px 0px; */
+
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
 .group {
