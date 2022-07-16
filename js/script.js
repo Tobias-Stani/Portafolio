@@ -1,46 +1,62 @@
-let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
+// let mainNav = document.getElementById("js-menu");
+// let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navBarToggle.addEventListener("click", function () {
-  mainNav.classList.toggle("active");
-});
+// navBarToggle.addEventListener("click", function () {
+//   mainNav.classList.toggle("active");
+// });
 
-// formulario
+// // formulario
 
-$(window, document, undefined).ready(function() {
+// $(window, document, undefined).ready(function () {
+//   $("input").blur(function () {
+//     var $this = $(this);
+//     if ($this.val()) $this.addClass("used");
+//     else $this.removeClass("used");
+//   });
 
-  $('input').blur(function() {
-    var $this = $(this);
-    if ($this.val())
-      $this.addClass('used');
-    else
-      $this.removeClass('used');
-  });
+//   var $ripples = $(".ripples");
 
-  var $ripples = $('.ripples');
+//   $ripples.on("click.Ripples", function (e) {
+//     var $this = $(this);
+//     var $offset = $this.parent().offset();
+//     var $circle = $this.find(".ripplesCircle");
 
-  $ripples.on('click.Ripples', function(e) {
+//     var x = e.pageX - $offset.left;
+//     var y = e.pageY - $offset.top;
 
-    var $this = $(this);
-    var $offset = $this.parent().offset();
-    var $circle = $this.find('.ripplesCircle');
+//     $circle.css({
+//       top: y + "px",
+//       left: x + "px",
+//     });
 
-    var x = e.pageX - $offset.left;
-    var y = e.pageY - $offset.top;
+//     $this.addClass("is-active");
+//   });
 
-    $circle.css({
-      top: y + 'px',
-      left: x + 'px'
-    });
-
-    $this.addClass('is-active');
-
-  });
-
-  $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
-  	$(this).removeClass('is-active');
-  });
-
-});
+//   $ripples.on(
+//     "animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd",
+//     function (e) {
+//       $(this).removeClass("is-active");
+//     }
+//   );
+// });
 
 // formulario
+
+// BOTON IR HACIA ARRIBA
+
+window.onscroll = function (){
+  if(document.documentElement.scrollTop > 100){
+    document.querySelector('.go-top-container')
+    .classList.add('show');
+  }else {
+    document.querySelector('.go-top-container')
+    .classList.remove('show');
+  }
+}
+
+document.querySelector('.go-top-container').addEventListener('click', () => {
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+})

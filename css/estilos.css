@@ -170,6 +170,75 @@
 
 /* Animation */
 
+/* BOTON IR HACIA ARRIBA */
+
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 0.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 1.6rem;
+  height: 1.6rem;
+  z-index: 11;
+  opacity: 0.8;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  100% {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+/* BOTON IR HACIA ARRIBA */
+
 /* Foto */
 main {
   display: flex;
