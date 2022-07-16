@@ -29,7 +29,7 @@
 
       <!-- NAVBAR -->
  
-       <nav class="navbar">
+       <!-- <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fas fa-bars"></i>
             </span>
@@ -48,15 +48,32 @@
             <a href="#" class="nav-links">Contact Us</a>
           </li>
         </ul>
+      </nav> -->
+
+
+      <nav class="nav" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+      
+          <span></span>
+          <span></span>
+          <span></span>
+        
+          <ul id="menu">
+            <a href="#inicio"><li>Inicio</li></a>
+            <a href="#sobre-mi"><li>Sobre mi</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#proyecto"><li>Proyectos</li></a>
+            <a href="#contacto"><li>Contacto</li></a>
+          </ul>
+        </div>
       </nav>
-
-
 
       <!-- NAVBAR -->
 
       <!--Content before waves-->
       <div class="inner-header flex">
-        <!-- <svg
+        <svg
           version="1.1"
           class="logo"
           baseProfile="tiny"
@@ -75,15 +92,24 @@
             stroke-miterlimit="10"
             d="M57,283"
           />
-        </svg> -->
+        </svg>
 
 
-        <div class="container-head">
+        <div class="container-head" id="inicio">
 
           <div class="container-title">
             <h1 class="title"> <h1>Tobias Stanislavsky</h1>
           </div>
           <h6>Front end developer 👨🏻‍💻</h6>
+
+          <!-- cv -->
+
+          <button class="btn-donate">
+
+            <a href="/assets/cv/cv.pdf" download="Cv Stanislavsky">MI CV</a>
+          </button>
+
+          <!-- cv -->
 
 
         </div> 
@@ -147,7 +173,7 @@
 
     <!--QUIEN SOY-->
 
-    <main>
+    <main id="sobre-mi">
       <div>
         <img src="./assets/IMG_7000.jfif" alt="" class="foto"  data-aos="fade-down" />
       </div>
@@ -167,10 +193,11 @@
     <!--QUIEN SOY-->
 
     <!--SKILLS-->
-
+    
+    <h2 id="skills">SKILLS</h2>
+    
     <div class="container-skills" data-aos="zoom-in-up">
-      <h2>SKILLS</h2>
-
+      
       <div class="habilidades">
         <ul>
           <li><i class="fa-brands fa-html5 fa-4x"></i></li>
@@ -194,7 +221,7 @@
     
     <!-- cards -->
     
-    <h2 class="proyectos-title">Mis Proyectos</h2>
+    <h2 id="proyecto" class="proyectos-title">Mis Proyectos</h2>
 
     <div class="container-card">
 
@@ -252,7 +279,7 @@
 
     <!-- FORMULARIO -->
 
-    <h2 class="proyectos-title" data-aos="zoom-in-up">Contactate conmigo</h2>
+    <h2 id="contacto" class="proyectos-title" data-aos="zoom-in-up">Contactate conmigo</h2>
 
 
     <form   action="https://formspree.io/f/mgedbpdb"
@@ -284,15 +311,17 @@
 
       <ul class="social_icon">
        
-        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://github.com/Tobias-Stani"><ion-icon name="logo-github"></ion-icon></a></li>
+
+        <li><a href="https://www.linkedin.com/in/tobias-stanislavsky-14641a22b/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+        <li><a href="https://www.instagram.com/tobi.stani/?hl=es"><ion-icon name="logo-instagram"></ion-icon></a></li>
       </ul>
       
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
       <p class="p_footer">&copy Tobias Stanislavsky</p>
     </footer>
