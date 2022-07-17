@@ -8,6 +8,28 @@
   font-family: "Lato", sans-serif;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #007bff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 3px none #007bff;
+  }
+
 /* CONTAINER PRINCIPAL */
 
 .container-principal{
@@ -224,6 +246,12 @@
   font-size: 70px;
   font-weight: 300;
 }
+
+.container-head h6 {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 300;
+}
 /* NOMBRE */
 
 .logo {
@@ -250,10 +278,7 @@
   /* background-color: #757575; */
 }
 
-.container-head h6 {
-  text-align: start;
-  font-size: 20px;
-}
+
 
 /* cv */
 
@@ -600,8 +625,9 @@ h2 {
   transition: all 320ms ease-in;
   transform: scale(1.8); */
 
-  transform: translateY(-20px);
-  transition: all 300ms ease-in;
+  /* transform: translateY(-20px); */
+  transform: translateY(-15px);
+  transition: all 200ms ease-in;
 }
 
 .fa-html5:hover {
@@ -695,6 +721,28 @@ h2 {
 .grid .btn {
   margin-top: 20px;
 }
+
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateX(-20%);
+  transition: left 0.5s ease-out;
+}
+
+.card i{
+  margin: 0 auto;
+}
+
+/* .card  img:hover{
+   -webkit-transition: all 20ms ease-in;
+  -webkit-transform: scale(1.8);
+  -ms-transition: all 300ms ease-in;
+  -ms-transform: scale(2.5);
+  -moz-transition: all 40ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 220ms ease-in;
+  transform: scale(1.1);
+} */
 
 /* CARDS*/
 
