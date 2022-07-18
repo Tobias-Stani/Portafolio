@@ -1118,3 +1118,13 @@ footer .menu li a:hover {
   }
 } */
 /* NAV MEDIAQUERY */
+
+/* SCROLL DOWN MEDIA QUERY */
+
+@media (max-width: 640px) {
+  .scrolldown {
+    display: none;
+  }
+}
+
+/* SCROLL DOWN MEDIA QUERY */
