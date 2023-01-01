@@ -687,6 +687,14 @@ h2 {
   transition: all 200ms ease-in;
 }
 
+.fa-react:hover {
+  color: #007bff;
+}
+
+.fa-php:hover {
+  color: #8892bf;
+}
+
 .fa-html5:hover {
   color: #ff5733;
 }
@@ -709,6 +717,10 @@ h2 {
 
 .fa-git-alt:hover {
   color: #f1502f;
+}
+
+.fa-npm:hover {
+  color: #cc3534;
 }
 
 /* skilss */
